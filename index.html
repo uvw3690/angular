@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+</head>
+<body>
+
+<div data-ng-app="" data-ng-init="profile=[{Name:'venkatesh',Country:'India'},{Name:'Vignesh',Country:'Canada'},{Name:'Rajesh',Country:'Germany'},{Name:'Karthik',Country:'West Indies'},{Name:'Karthik',Country:'West Indies'},{Name:'Karthik',Country:'West Indies'},{Name:'Karthik',Country:'West Indies'},{Name:'Prem',Country:'Spain'},{Name:'Sam',Country:'Russia'},{Name:'Vinoth',Country:'USA'}]">
+
+<h2>Data list</h2>
+
+<table class="bordered" border="1" cellpadding=5" cellspacing="2">
+
+<tr data-ng-repeat="x in profile" >
+<td>{{x.Name}}</td><td>{{x.Country}}</td>
+</tr>
+
+</table>
+
+
+</div>
+
+
+
+</body>
+</html>
+
